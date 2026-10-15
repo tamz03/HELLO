@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Media Demo</title>
+  <style>
+    body { font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; margin: 2rem; }
+    header { margin-bottom: 1.5rem; }
+    .media { max-width: 800px; margin-bottom: 1.5rem; }
+    img { max-width: 100%; height: auto; display:block; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>MEDIA.HTML — Media Demo</h1>
+    <p>Examples of image, audio, and video elements with accessible fallbacks.</p>
+  </header>
+
+  <section class="media" aria-labelledby="image-heading">
+    <h2 id="image-heading">Image</h2>
+    <figure>
+      <img src="https://via.placeholder.com/800x400.png?text=Sample+Image" alt="Placeholder sample image" />
+      <figcaption>Example image served from a public placeholder service.</figcaption>
+    </figure>
+  </section>
+
+  <section class="media" aria-labelledby="audio-heading">
+    <h2 id="audio-heading">Audio</h2>
+    <audio controls>
+      <source src="https://www.w3schools.com/html/horse.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+  </section>
+
+  <section class="media" aria-labelledby="video-heading">
+    <h2 id="video-heading">Video</h2>
+    <video controls width="720" poster="https://via.placeholder.com/720x405.png?text=Video+Poster">
+      <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+      Sorry, your browser doesn't support embedded videos.
+    </video>
+  </section>
+
+  <footer>
+    <p>Created for tamz03/HELLO — edit this file to include your own media.</p>
+  </footer>
+</body>
+</html>
